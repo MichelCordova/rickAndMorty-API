@@ -1,7 +1,6 @@
 export default function CharacterCard({ character, lang }) {
   const { name, status, species, image, gender } = character;
 
-  // Traducciones simples
   const translate = {
     es: {
       status: {
@@ -30,18 +29,20 @@ export default function CharacterCard({ character, lang }) {
   };
 
   return (
-    <div className="bg-[#181818] rounded-2xl overflow-hidden shadow-lg transition transform hover:scale-[1.02]">
+    <div className="w-[323px] h-[421px] rounded-[20px] border border-white overflow-hidden shadow-lg transition-transform hover:scale-[1.02] flex flex-col items-center">
       <img
         src={image}
         alt={name}
-        className="w-full h-[300px] object-cover object-top"
+        className="w-[263px] h-[301px] object-cover object-top"
       />
-      <div className="p-4 space-y-1">
-        <h3 className="text-xl font-semibold text-white">{name}</h3>
-        <p className="text-sm text-gray-400">
+      <div className="flex flex-col items-center justify-center px-4 py-2 space-y-1 text-center">
+        <h3 className="text-[30px] font-light font-poppins text-white leading-[100%]">
+          {name}
+        </h3>
+        <p className="text-[30px] font-light font-poppins text-white leading-[100%]">
           {translate[lang].status[status] || status} - {species}
         </p>
-        <p className="text-sm text-gray-400">
+        <p className="text-[30px] font-light font-poppins text-white leading-[100%]">
           {translate[lang].gender[gender] || gender}
         </p>
       </div>

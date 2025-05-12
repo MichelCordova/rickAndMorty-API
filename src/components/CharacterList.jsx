@@ -79,7 +79,7 @@ export default function CharacterList({ lang }) {
       ) : error ? (
         <p className="text-center text-red-500">{error}</p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="flex flex-wrap justify-between gap-6 max-w-[1200px] mx-auto">
           {data?.results?.map((char) => (
             <CharacterCard key={char.id} character={char} lang={lang} />
           ))}
