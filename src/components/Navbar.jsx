@@ -42,20 +42,20 @@ export default function Navbar({ lang, toggleLang }) {
             <NavLink
               to="/aboutUs"
               className={({ isActive }) =>
-                `${isActive ? "text-[#00FF00] font-semibold" : "text-white hover:text-[#00FF00]"} text-[13px] font-poppins w-full h-full flex items-center justify-center px-[10px] py-[5px]`
+                `${isActive ? "text-[#00FF00] font-semibold" : "text-white hover:text-[#00FF00]"} text-[13px] font-poppins w-full h-full flex items-center justify-center px-[5px] py-[5px]`
               }
             >
-              {lang === "es" ? "Sobre Nosotros" : "About Us"}
+              {lang === "es" ? "Nosotros" : "About Us"}
             </NavLink>
           </li>
           <li className="w-[78px] h-[30px]">
             <NavLink
               to="/contactUs"
               className={({ isActive }) =>
-                `${isActive ? "text-[#00FF00] font-semibold" : "text-white hover:text-[#00FF00]"} text-[13px] font-poppins w-full h-full flex items-center justify-center px-[10px] py-[5px]`
+                `${isActive ? "text-[#00FF00] font-semibold" : "text-white hover:text-[#00FF00]"} text-[13px] font-poppins w-full h-full flex items-center justify-center px-[5px] py-[4px]`
               }
             >
-              {lang === "es" ? "Contáctame" : "Contact Me"}
+              {lang === "es" ? "Contactanos" : "Contact Us"}
             </NavLink>
           </li>
         </ul>

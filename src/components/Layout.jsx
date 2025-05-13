@@ -10,7 +10,7 @@ export default function Layout() {
     <div className="min-h-screen bg-[#111] text-white">
       <Navbar lang={lang} toggleLang={toggleLang} />
       <main className="p-6">
-        <Outlet context={{ lang }} />
+        <Outlet context={{ lang, toggleLang }} />
       </main>
     </div>
   );

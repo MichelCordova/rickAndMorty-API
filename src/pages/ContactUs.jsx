@@ -11,14 +11,14 @@ export default function ContactUs() {
 
   const labels = {
     es: {
-      title: "Contáctame",
+      title: "Contactanos",
       name: "Nombre",
       email: "Correo electrónico",
       message: "Mensaje",
       submit: "Enviar",
     },
     en: {
-      title: "Contact Me",
+      title: "Contact Us",
       name: "Name",
       email: "Email",
       message: "Message",
